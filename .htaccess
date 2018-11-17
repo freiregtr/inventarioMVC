@@ -1,0 +1,8 @@
+# no permitir l anavegación por parte del usuario
+Options All -Indexes
+
+# url amigables
+RewriteEngine On
+# expresion regular donde permite que caracteres utilizar
+RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1
+
